@@ -1,6 +1,8 @@
 import os
-from typing import List, Dict, Union
+from typing import List, Dict, TypeVar, Union
 from the_cat_api.exceptions import TheCatApiException
+
+Model = TypeVar('Model', covariant=True)
 
 
 class Result:
